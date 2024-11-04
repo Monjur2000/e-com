@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@layer base{
+    section{
+        @apply py-[70px]
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-full w-[1440px] mx-auto px-[20px]
+    }
+}
+
+
+
+/* EXTRA LARGE SCREEN */
+@media only screen and (max-width:1280px){
+    section{
+        @apply py-[60px]
+    }
+}
+
+/* LARGE SCREEN */
+@media only screen and (max-width:1024px){
+    section{
+        @apply py-[50px]
+    }
+}
+
+/* MEDIUM SCREEN */
+@media only screen and (max-width:768px){
+    .container{
+        @apply w-full
+    }
+    section{
+        @apply py-[40px]
+    }
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width:640px){
+    .container{
+        @apply w-full
+    }
+}

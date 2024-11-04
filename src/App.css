@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+    
+}
+body{
+    height: 2000px;
+}
+
+.hamMenu{
+    display: none;
+}
+.searchIconStyle{
+    display: none;
+}
+.crossIcon{
+    display: none;
+}
+.fixed_navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+@media only screen and (max-width:1024px){
+    .hamMenu{
+        display: block;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .menu{
+        width: 250px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+    .crossIcon{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 999;
+        cursor:pointer
+    }
+}
+
+@media only screen and (max-width:768px){
+    .searchIconStyle{
+        display: block;
+    }
+    .search_div{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+    }
+    .search_bar{
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    
+}
