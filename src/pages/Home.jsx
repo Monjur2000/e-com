@@ -31,7 +31,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* HERO SECTION CONTENT END */}
+            {/* HERO SECTION CONTENT END h*/}
 
             {/* HERO SECTION IMG START */}
             <div className='w-[100%] h-[70vh] sm:h-[90vh]  md:h-full lg:h-[92vh] xl:h-screen'>
